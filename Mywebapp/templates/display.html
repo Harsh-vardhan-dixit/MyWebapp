@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aqua;
+            /* background:url(blog6.jpg); */
+        }
+        #box{
+            margin-top: 200px;
+            width:600px;
+            height:250px;
+            background-color: rgb(107, 107, 126);
+            border-radius: 10px;
+        }
+        #text{
+            margin-top: 70px;
+            width: 80%;
+            border-radius: 10px;
+        }
+        #btn{
+            color: aqua;
+            background-color: black;
+            width: 480px;
+            height: 30px;
+            border-radius: 12px;
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <center> <form id="box" action="{{ url_for('predict1') }}" method="post">
+        <textarea  rows="5" cols="20" name="fname" id="text" placeholder="Enter the author name + news title here"></textarea>
+        
+        <br><br/>
+        <input type="submit" value="Submit" id="btn">
+    
+        
+    </form>
+</center>
+<br>
+<br>
+<center>
+    
+</center>
+</body>
+</html> 
